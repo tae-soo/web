@@ -8,8 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 secret_file = os.path.join(BASE_DIR, 'secret.json')
 
 with open(secret_file) as f:
-    secrets =json.load(f.read())
-
+    secrets =json.loads(f.read())
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
